@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Matías González, diseñador gráfico especializado en branding y dirección de arte."
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Matías González — Diseñador Gráfico</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Ir al contenido</a>
+
+    <div class="ambient-bg" aria-hidden="true">
+      <span class="ambient-bg__glow ambient-bg__glow--one"></span>
+      <span class="ambient-bg__glow ambient-bg__glow--two"></span>
+      <span class="ambient-bg__glow ambient-bg__glow--three"></span>
+      <span class="ambient-bg__glow ambient-bg__glow--four"></span>
+    </div>
+
+    <header class="site-header" data-header>
+      <a class="header-brand" href="#inicio" aria-label="Matías González, inicio">
+        MG<span>.</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-navigation"
+        data-menu-toggle
+      >
+        <span>Menú</span>
+        <span class="menu-toggle__mark" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Navegación principal" data-nav>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#perfil">Perfil</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <div class="scroll-progress" aria-hidden="true">
+      <span data-scroll-progress></span>
+    </div>
+
+    <main id="contenido">
+      <section class="hero section-dark" id="inicio" aria-labelledby="hero-title">
+        <p class="eyebrow hero__eyebrow reveal">Portfolio · 2026</p>
+
+        <h1 class="hero__title reveal" id="hero-title">
+          <span class="sr-only">Matías González</span>
+          <img
+            src="./assets/matias-gonzalez-logo.svg"
+            alt=""
+            width="479"
+            height="137"
+          />
+        </h1>
+
+        <div class="hero__footer reveal">
+          <p>Diseñador gráfico<br />Branding &amp; Dirección de Arte</p>
+          <p>Buenos Aires, Argentina<br />Disponible para nuevos proyectos</p>
+        </div>
+
+        <a class="scroll-cue" href="#perfil">
+          <span>Descubrir</span>
+          <span aria-hidden="true">↓</span>
+        </a>
+      </section>
+
+      <section
+        class="philosophy section-light"
+        id="perfil"
+        aria-label="Perfil y manifiesto de diseño"
+      >
+        <div class="philosophy__lights" aria-hidden="true">
+          <span class="philosophy__light philosophy__light--one"></span>
+          <span class="philosophy__light philosophy__light--two"></span>
+          <span class="philosophy__light philosophy__light--three"></span>
+          <span class="philosophy__light philosophy__light--four"></span>
+        </div>
+
+        <blockquote class="philosophy__quote reveal">
+          <span class="philosophy__mark" aria-hidden="true">“</span>
+          <p>
+            Construyo identidades visuales desde
+            <span>una idea clara</span>, combinando estrategia, concepto y dirección de
+            arte.
+          </p>
+          <p>
+            Cada proyecto funciona como un sistema coherente, capaz de crecer en piezas
+            editoriales, campañas y entornos digitales.
+          </p>
+        </blockquote>
+      </section>
+
+      <div class="motion-band section-dark" aria-hidden="true">
+        <div class="motion-band__track">
+          <span>
+            Branding <i>●</i> Dirección de Arte <i>●</i> Diseño Editorial <i>●</i>
+            Campañas <i>●</i>&nbsp;
+          </span>
+          <span>
+            Branding <i>●</i> Dirección de Arte <i>●</i> Diseño Editorial <i>●</i>
+            Campañas <i>●</i>&nbsp;
+          </span>
+        </div>
+      </div>
+
+      <section class="projects section-dark" id="proyectos" aria-labelledby="projects-title">
+        <div class="section-label reveal">
+          <span>02</span>
+          <span>Trabajo seleccionado</span>
+        </div>
+
+        <div class="section-heading reveal">
+          <h2 id="projects-title">Proyectos<span>.</span></h2>
+          <p>
+            Una selección de identidades, campañas y sistemas visuales desarrollados
+            para distintos universos de marca.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <a
+            class="project-card project-card--wide reveal"
+            href="./projects/susano.html"
+            aria-label="Ver proyecto Susano"
+          >
+            <div class="project-card__visual">
+              <img
+                class="project-card__image"
+                src="./assets/projects/susano/cover.png"
+                alt=""
+              />
+              <span class="project-card__index">01</span>
+              <span class="project-card__status">Ver proyecto</span>
+              <span class="project-card__plus" aria-hidden="true">↗</span>
+            </div>
+            <div class="project-card__meta">
+              <h3>Susano</h3>
+              <p>Identidad visual · Esports</p>
+            </div>
+          </a>
+
+          <a
+            class="project-card reveal"
+            href="./projects/brando.html"
+            aria-label="Ver proyecto Brando"
+          >
+            <div class="project-card__visual">
+              <img
+                class="project-card__image project-card__image--brando"
+                src="./assets/projects/brando/cover.png"
+                alt=""
+                loading="lazy"
+              />
+              <span class="project-card__index">02</span>
+              <span class="project-card__status">Ver proyecto</span>
+              <span class="project-card__plus" aria-hidden="true">↗</span>
+            </div>
+            <div class="project-card__meta">
+              <h3>Brando</h3>
+              <p>Arte de tapa · Campaña</p>
+            </div>
+          </a>
+
+          <a
+            class="project-card reveal"
+            href="./projects/nordes.html"
+            aria-label="Ver proyecto Nordés"
+          >
+            <div class="project-card__visual">
+              <img
+                class="project-card__image project-card__image--nordes"
+                src="./assets/projects/nordes/cover.png"
+                alt=""
+                loading="lazy"
+              />
+              <span class="project-card__index">03</span>
+              <span class="project-card__status">Ver proyecto</span>
+              <span class="project-card__plus" aria-hidden="true">↗</span>
+            </div>
+            <div class="project-card__meta">
+              <h3>Nordés</h3>
+              <p>Branding · Packaging</p>
+            </div>
+          </a>
+
+          <a
+            class="project-card project-card--wide reveal"
+            href="./projects/317-studio.html"
+            aria-label="Ver proyecto 317 Studio"
+          >
+            <div class="project-card__visual">
+              <img
+                class="project-card__image"
+                src="./assets/projects/317/cover.png"
+                alt=""
+                loading="lazy"
+              />
+              <span class="project-card__index">04</span>
+              <span class="project-card__status">Ver proyecto</span>
+              <span class="project-card__plus" aria-hidden="true">↗</span>
+            </div>
+            <div class="project-card__meta">
+              <h3>317 Studio</h3>
+              <p>Identidad visual · Estudio creativo</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="expertise section-dark" aria-labelledby="expertise-title">
+        <div class="section-label reveal">
+          <span>03</span>
+          <span>Especialidades</span>
+        </div>
+
+        <h2 class="expertise__title reveal" id="expertise-title">
+          De la estrategia<br />a la imagen final.
+        </h2>
+
+        <div class="expertise-list">
+          <article class="expertise-card reveal">
+            <div>
+              <p>Identidades consistentes, reconocibles y preparadas para crecer.</p>
+              <h3>Branding</h3>
+            </div>
+            <span>01.</span>
+          </article>
+
+          <article class="expertise-card expertise-card--blue reveal">
+            <div>
+              <p>Conceptos visuales capaces de ordenar y potenciar una campaña.</p>
+              <h3>Dirección de Arte</h3>
+            </div>
+            <span>02.</span>
+          </article>
+
+          <article class="expertise-card expertise-card--outline reveal">
+            <div>
+              <p>Sistemas editoriales claros para formatos impresos y digitales.</p>
+              <h3>Diseño Editorial</h3>
+            </div>
+            <span>03.</span>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="experience section-light"
+        id="experiencia"
+        aria-labelledby="experience-title"
+      >
+        <div class="section-label reveal">
+          <span>04</span>
+          <span>Experiencia</span>
+        </div>
+
+        <h2 class="experience__title reveal" id="experience-title">Recorrido.</h2>
+
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <p class="timeline__date">2022 — Actualidad</p>
+            <div>
+              <h3>317 Studio</h3>
+              <p>Diseñador gráfico freelance</p>
+            </div>
+            <p>
+              Identidad de marca, piezas editoriales y material promocional para
+              emprendimientos y organizaciones de distintos rubros.
+            </p>
+          </article>
+
+          <article class="timeline__item reveal">
+            <p class="timeline__date">2024 — 2025</p>
+            <div>
+              <h3>MAG Rent</h3>
+              <p>Diseñador gráfico</p>
+            </div>
+            <p>
+              Diseño de catálogos e instructivos comerciales, mantenimiento de
+              identidad y colaboración con el equipo de ventas.
+            </p>
+          </article>
+
+          <article class="timeline__item reveal">
+            <p class="timeline__date">2021 — 2025</p>
+            <div>
+              <h3>UADE</h3>
+              <p>Licenciatura en Diseño Gráfico</p>
+            </div>
+            <p>
+              Formación en comunicación visual, sistemas de identidad, diseño
+              editorial y dirección de proyectos.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="tools section-dark" aria-label="Herramientas de trabajo">
+        <p class="tools__line" aria-hidden="true">
+          <span class="tools__track">
+            Photoshop <i>●</i> Illustrator <i>●</i> InDesign <i>●</i> Figma
+            <i>●</i> Blender <i>●</i>&nbsp;
+          </span>
+          <span class="tools__track">
+            Photoshop <i>●</i> Illustrator <i>●</i> InDesign <i>●</i> Figma
+            <i>●</i> Blender <i>●</i>&nbsp;
+          </span>
+        </p>
+        <p class="sr-only">
+          Herramientas: Photoshop, Illustrator, InDesign, Figma y Blender.
+        </p>
+      </section>
+
+      <section class="contact section-blue" id="contacto" aria-labelledby="contact-title">
+        <div class="section-label reveal">
+          <span>05</span>
+          <span>Contacto</span>
+        </div>
+
+        <p class="contact__intro reveal">¿Creamos algo juntos?</p>
+        <h2 class="contact__title reveal" id="contact-title">
+          Hablemos<span>.</span>
+        </h2>
+
+        <a class="contact__email reveal" href="mailto:matiasngonzalez0@gmail.com">
+          matiasngonzalez0@gmail.com
+          <span aria-hidden="true">↗</span>
+        </a>
+
+        <div class="contact__links reveal">
+          <a
+            href="https://www.linkedin.com/in/mat%C3%ADas-gonz%C3%A1lez-7a4a07208/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn ↗
+          </a>
+          <a
+            class="contact__behance"
+            href="https://www.behance.net/matiasgonzalez49"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Behance de Matías González"
+          >
+            <span class="behance-icon" aria-hidden="true">Bē</span>
+            <span>Behance ↗</span>
+          </a>
+          <a href="tel:+5492974270140">+54 9 2974 27-0140</a>
+          <a href="./assets/matias-gonzalez-cv.pdf" download>Descargar CV ↓</a>
+        </div>
+
+        <footer class="contact__footer">
+          <img
+            src="./assets/matias-gonzalez-logo.svg"
+            alt="Matías González"
+            width="479"
+            height="137"
+          />
+          <div>
+            <p>Buenos Aires, Argentina</p>
+            <p>© <span data-year></span> Matías González</p>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

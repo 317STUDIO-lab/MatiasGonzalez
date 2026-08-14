@@ -1,0 +1,186 @@
+.project-page {
+  background: #000000;
+}
+
+.project-header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 5.5rem;
+  padding: 0 var(--page-padding);
+  border-bottom: 1px solid var(--line-dark);
+  background: rgba(0, 0, 0, 0.62);
+  backdrop-filter: blur(16px);
+}
+
+.project-header__brand {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.project-header__brand span,
+.case-study__intro h1 span,
+.case-study__footer a span {
+  color: var(--blue);
+}
+
+.project-header__back {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 200ms ease;
+}
+
+.project-header__back span {
+  font-size: 1rem;
+  transition: transform 200ms ease;
+}
+
+.project-header__back:hover {
+  color: #8ea2ff;
+}
+
+.project-header__back:hover span {
+  transform: translateX(-0.3rem);
+}
+
+.case-study {
+  position: relative;
+  z-index: 1;
+  padding: 0 var(--page-padding) var(--page-padding);
+}
+
+.case-study__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(15rem, 0.5fr);
+  gap: 2rem;
+  align-items: end;
+  width: min(111.5rem, 100%);
+  margin: 0 auto;
+  padding: clamp(5rem, 10vw, 9rem) 0 clamp(3rem, 6vw, 5rem);
+}
+
+.case-study__eyebrow,
+.case-study__summary {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.case-study__eyebrow {
+  margin-bottom: 1.5rem;
+  color: #aebcff;
+}
+
+.case-study__intro h1 {
+  font-size: clamp(5rem, 13vw, 13rem);
+  font-weight: 700;
+  letter-spacing: 0.5pt;
+  line-height: 0.72;
+}
+
+.case-study__summary {
+  display: grid;
+  gap: 0.6rem;
+  padding-bottom: 0.35rem;
+  line-height: 1.5;
+}
+
+.case-study__summary p:last-child {
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.case-gallery {
+  width: min(111.5rem, 100%);
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: #ffffff;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.case-gallery img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+}
+
+.case-study__footer {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: min(111.5rem, 100%);
+  margin: 0 auto;
+  padding: clamp(5rem, 10vw, 9rem) 0 clamp(3rem, 6vw, 5rem);
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.case-study__footer p {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.case-study__footer a {
+  font-size: clamp(2rem, 5vw, 5rem);
+  font-weight: 700;
+  letter-spacing: 0.5pt;
+}
+
+@media (max-width: 720px) {
+  .project-header {
+    min-height: 4.75rem;
+  }
+
+  .project-header__back {
+    font-size: 0.62rem;
+  }
+
+  .case-study {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .case-study__intro,
+  .case-study__footer {
+    width: auto;
+    margin-right: var(--page-padding);
+    margin-left: var(--page-padding);
+  }
+
+  .case-study__intro {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+    padding-top: 5rem;
+  }
+
+  .case-study__intro h1 {
+    font-size: clamp(4rem, 23vw, 7rem);
+  }
+
+  .case-gallery {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .case-study__footer {
+    display: block;
+  }
+
+  .case-study__footer a {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-header__back span {
+    transition: none;
+  }
+}
