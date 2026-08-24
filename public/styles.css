@@ -15,7 +15,7 @@
 
 html {
   scroll-behavior: smooth;
-  zoom: 0.95;
+  zoom: 0.9;
 }
 
 body {
@@ -307,7 +307,7 @@ h3 {
 .hero {
   position: relative;
   display: flex;
-  min-height: 100svh;
+  min-height: 111.112svh;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
