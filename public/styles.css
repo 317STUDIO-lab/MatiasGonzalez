@@ -153,7 +153,7 @@ h3 {
 .site-header {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
   z-index: 50;
   display: grid;
   grid-template-columns: auto auto;
@@ -172,7 +172,7 @@ h3 {
 
 .header-brand {
   justify-self: start;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   font-weight: 800;
   letter-spacing: -0.08em;
 }
@@ -233,7 +233,7 @@ h3 {
 .site-nav {
   display: flex;
   gap: clamp(1rem, 2vw, 1.75rem);
-  font-size: 0.795rem;
+  font-size: 1rem;
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
@@ -368,7 +368,7 @@ h3 {
 }
 
 .eyebrow {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -397,7 +397,7 @@ h3 {
 }
 
 .hero__role {
-  font-size: clamp(1rem, 1.36vw, 1.25rem);
+  font-size: clamp(1.2rem, 1.55vw, 1.5rem);
   line-height: 1.35;
   color: rgba(255, 255, 255, 0.72);
 }
@@ -410,7 +410,7 @@ h3 {
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
-  font-size: clamp(1rem, 1.36vw, 1.25rem);
+  font-size: clamp(1.15rem, 1.55vw, 1.4rem);
   line-height: 1.35;
 }
 
@@ -423,10 +423,10 @@ h3 {
   display: flex;
   gap: 0.7rem;
   align-items: center;
-  padding: 0.7rem 1rem;
+  padding: 0.9rem 1.3rem;
   border: 1px solid var(--line-dark);
   border-radius: 100vmax;
-  font-size: 0.67rem;
+  font-size: 0.85rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transform: none;
