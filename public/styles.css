@@ -854,9 +854,10 @@ h3 {
 }
 
 .expertise-card p {
-  max-width: 29rem;
+  max-width: none;
   font-size: 1.17rem;
   line-height: 1.4;
+  white-space: nowrap;
 }
 
 .expertise-card > span {
@@ -1362,6 +1363,11 @@ h3 {
 
   .expertise-card h3 {
     max-width: 7ch;
+  }
+
+  .expertise-card p {
+    max-width: 29rem;
+    white-space: normal;
   }
 
   .timeline__item {
