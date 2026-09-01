@@ -16,7 +16,7 @@
 }
 
 .project-header__brand {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: -0.04em;
 }
@@ -31,14 +31,14 @@
   display: flex;
   align-items: center;
   gap: 0.65rem;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: color 200ms ease;
 }
 
 .project-header__back span {
-  font-size: 1rem;
+  font-size: 1.15rem;
   transition: transform 200ms ease;
 }
 
@@ -68,7 +68,7 @@
 
 .case-study__eyebrow,
 .case-study__summary {
-  font-size: 0.72rem;
+  font-size: 0.9rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -212,7 +212,7 @@
   }
 
   .project-header__back {
-    font-size: 0.62rem;
+    font-size: 0.75rem;
   }
 
   .case-study {
