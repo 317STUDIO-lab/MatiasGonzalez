@@ -855,7 +855,7 @@ h3 {
 
 .expertise-card p {
   max-width: none;
-  font-size: 1.17rem;
+  font-size: calc(1.17rem + 2px);
   line-height: 1.4;
   white-space: nowrap;
 }
@@ -919,6 +919,10 @@ h3 {
   margin-top: 0.35rem;
   font-size: 1.2rem;
   line-height: 1.45;
+}
+
+.timeline__item > p:last-child {
+  font-size: calc(1.2rem + 2px);
 }
 
 .timeline__item div p {
