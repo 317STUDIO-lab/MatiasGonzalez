@@ -436,12 +436,12 @@ h3 {
 .scroll-cue {
   position: relative;
   display: flex;
-  gap: 0.8rem;
+  gap: 0.96rem;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 1.8rem;
   border: 1px solid var(--line-dark);
   border-radius: 100vmax;
-  font-size: 0.9rem;
+  font-size: 1.08rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transform: none;
