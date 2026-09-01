@@ -16,6 +16,7 @@
 }
 
 .project-header__brand {
+  font-family: var(--font-display);
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: -0.04em;
@@ -32,6 +33,7 @@
   align-items: center;
   gap: 0.65rem;
   font-size: 0.85rem;
+  font-family: var(--font-display);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: color 200ms ease;
@@ -79,10 +81,12 @@
 }
 
 .case-study__intro h1 {
+  font-family: var(--font-display);
   font-size: clamp(5rem, 13vw, 13rem);
   font-weight: 700;
   letter-spacing: 0.5pt;
   line-height: 0.72;
+  text-transform: uppercase;
 }
 
 .case-study__summary {
@@ -201,9 +205,11 @@
 }
 
 .case-study__footer a {
+  font-family: var(--font-display);
   font-size: clamp(2rem, 5vw, 5rem);
   font-weight: 700;
   letter-spacing: 0.5pt;
+  text-transform: uppercase;
 }
 
 @media (max-width: 720px) {
