@@ -98,6 +98,9 @@ body {
   background: var(--black);
   color: var(--white);
   font-family: var(--font-body);
+  letter-spacing: normal;
+  line-height: normal;
+  font-kerning: auto;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -249,7 +252,7 @@ h3 {
   justify-self: start;
   font-size: 1.3rem;
   font-weight: 800;
-  letter-spacing: -0.08em;
+  letter-spacing: normal;
 }
 
 .header-brand span {
@@ -267,7 +270,7 @@ h3 {
   cursor: pointer;
   text-transform: uppercase;
   font-size: 0.7rem;
-  letter-spacing: 0.08em;
+  letter-spacing: normal;
 }
 
 .menu-toggle__mark {
@@ -309,7 +312,7 @@ h3 {
   display: flex;
   gap: clamp(1.15rem, 2.2vw, 1.9rem);
   font-size: 1.08rem;
-  letter-spacing: 0.07em;
+  letter-spacing: normal;
   text-transform: uppercase;
 }
 
@@ -403,7 +406,7 @@ h3 {
   padding-bottom: 1rem;
   border-bottom: 1px solid currentColor;
   font-size: 0.7rem;
-  letter-spacing: 0.08em;
+  letter-spacing: normal;
   text-transform: uppercase;
 }
 
@@ -481,7 +484,7 @@ h3 {
 
 .eyebrow {
   font-size: 0.85rem;
-  letter-spacing: 0.1em;
+  letter-spacing: normal;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -511,7 +514,7 @@ h3 {
 
 .hero__role {
   font-size: clamp(1.2rem, 1.55vw, 1.5rem);
-  line-height: 1.35;
+  line-height: normal;
   color: rgba(255, 255, 255, 0.72);
 }
 
@@ -524,7 +527,7 @@ h3 {
   justify-content: flex-end;
   gap: 2rem;
   font-size: clamp(1.15rem, 1.55vw, 1.4rem);
-  line-height: 1.35;
+  line-height: normal;
 }
 
 .hero__footer p:last-child {
@@ -540,7 +543,7 @@ h3 {
   border: 1px solid var(--line-dark);
   border-radius: 100vmax;
   font-size: 1.08rem;
-  letter-spacing: 0.08em;
+  letter-spacing: normal;
   text-transform: uppercase;
   transform: none;
   transition:
@@ -662,8 +665,8 @@ h3 {
   margin-inline: auto;
   font-size: clamp(1.8rem, 3.4vw, 3.8rem);
   font-weight: 700;
-  letter-spacing: -0.055em;
-  line-height: 1.08;
+  letter-spacing: normal;
+  line-height: normal;
 }
 
 .philosophy__quote p + p {
@@ -686,8 +689,8 @@ h3 {
   width: max-content;
   font-size: clamp(2.3rem, 6vw, 6rem);
   font-weight: 700;
-  letter-spacing: -0.055em;
-  line-height: 0.9;
+  letter-spacing: normal;
+  line-height: normal;
   white-space: nowrap;
   animation: marquee-reverse 24s linear infinite;
   will-change: transform;
@@ -715,8 +718,8 @@ h3 {
 .contact__title {
   font-size: clamp(4rem, 10vw, 10rem);
   font-weight: 700;
-  letter-spacing: 0.5pt;
-  line-height: 0.82;
+  letter-spacing: normal;
+  line-height: normal;
   text-transform: uppercase;
 }
 
@@ -728,7 +731,7 @@ h3 {
 .section-heading p {
   max-width: 27rem;
   font-size: 1.3rem;
-  line-height: 1.45;
+  line-height: normal;
 }
 
 .project-grid {
@@ -864,7 +867,7 @@ h3 {
 
 .project-card__index {
   font-size: 0.72rem;
-  letter-spacing: 0.08em;
+  letter-spacing: normal;
 }
 
 .project-card__status {
@@ -873,7 +876,7 @@ h3 {
   border: 1px solid var(--line-dark);
   border-radius: 100vmax;
   font-size: 0.67rem;
-  letter-spacing: 0.08em;
+  letter-spacing: normal;
   text-transform: uppercase;
 }
 
@@ -898,7 +901,7 @@ h3 {
 
 .project-card__meta h3 {
   font-size: clamp(1.2rem, 2vw, 1.75rem);
-  letter-spacing: 0.5pt;
+  letter-spacing: normal;
   text-transform: uppercase;
 }
 
@@ -914,7 +917,7 @@ h3 {
 .expertise__title {
   margin-top: clamp(4rem, 8vw, 7rem);
   margin-bottom: clamp(3rem, 7vw, 6rem);
-  line-height: 1.02;
+  line-height: normal;
 }
 
 .expertise-list {
@@ -949,15 +952,15 @@ h3 {
 .expertise-card h3 {
   font-size: clamp(2.5rem, 6vw, 6rem);
   font-weight: 700;
-  letter-spacing: 0.5pt;
-  line-height: 0.9;
+  letter-spacing: normal;
+  line-height: normal;
   text-transform: uppercase;
 }
 
 .expertise-card p {
   max-width: none;
   font-size: calc(1.17rem + 2px);
-  line-height: 1.4;
+  line-height: normal;
   white-space: nowrap;
 }
 
@@ -965,8 +968,8 @@ h3 {
   align-self: flex-end;
   font-size: clamp(3rem, 8vw, 7rem);
   font-weight: 700;
-  letter-spacing: -0.08em;
-  line-height: 0.8;
+  letter-spacing: normal;
+  line-height: normal;
 }
 
 .expertise-card--blue {
@@ -998,13 +1001,13 @@ h3 {
 
 .timeline__date {
   font-size: 1.05rem;
-  letter-spacing: 0.06em;
+  letter-spacing: normal;
   text-transform: uppercase;
 }
 
 .timeline__item h3 {
   font-size: clamp(1.4rem, 2.2vw, 2rem);
-  letter-spacing: 0.5pt;
+  letter-spacing: normal;
   text-transform: uppercase;
   transition:
     color 250ms ease,
@@ -1020,7 +1023,7 @@ h3 {
 .timeline__item > p:last-child {
   margin-top: 0.35rem;
   font-size: 1.2rem;
-  line-height: 1.45;
+  line-height: normal;
 }
 
 .timeline__item > p:last-child {
@@ -1041,8 +1044,8 @@ h3 {
   width: max-content;
   font-size: clamp(4rem, 9vw, 9rem);
   font-weight: 700;
-  letter-spacing: -0.06em;
-  line-height: 0.85;
+  letter-spacing: normal;
+  line-height: normal;
   white-space: nowrap;
   animation: marquee 28s linear infinite;
 }
@@ -1101,7 +1104,7 @@ h3 {
   border-top: 1px solid currentColor;
   border-bottom: 1px solid currentColor;
   font-size: clamp(1rem, 2.3vw, 2rem);
-  letter-spacing: -0.03em;
+  letter-spacing: normal;
 }
 
 .contact__email span {
@@ -1120,7 +1123,7 @@ h3 {
   gap: 1rem 1.25rem;
   padding-top: 2rem;
   font-size: 1.3rem;
-  letter-spacing: 0.04em;
+  letter-spacing: normal;
   text-transform: uppercase;
 }
 
@@ -1181,7 +1184,7 @@ h3 {
 .contact__footer div {
   text-align: right;
   font-size: 0.95rem;
-  line-height: 1.5;
+  line-height: normal;
   text-transform: uppercase;
 }
 
@@ -1398,7 +1401,7 @@ h3 {
     background: var(--black);
     font-size: clamp(2.7rem, 12vw, 5rem);
     font-weight: 700;
-    letter-spacing: -0.06em;
+    letter-spacing: normal;
     text-transform: none;
     opacity: 0;
     visibility: hidden;
@@ -1444,7 +1447,7 @@ h3 {
   .philosophy__quote p {
     max-width: 18ch;
     font-size: clamp(1.75rem, 8vw, 2.7rem);
-    line-height: 1.12;
+    line-height: normal;
   }
 
   .section-heading {
