@@ -97,7 +97,7 @@
 }
 
 .case-study__summary p:last-child {
-  color: rgba(255, 255, 255, 0.58);
+  color: rgba(var(--white-rgb), 0.58);
 }
 
 .case-gallery {
@@ -105,8 +105,8 @@
   margin: 0 auto;
   overflow: hidden;
   border-radius: var(--radius);
-  background: #ffffff;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12);
+  background: var(--white);
+  box-shadow: 0 0 0 1px rgba(var(--white-rgb), 0.12);
 }
 
 .case-gallery img {
@@ -136,7 +136,7 @@
   gap: 1rem;
   padding: 0.75rem 1rem;
   border-bottom: 1px solid var(--line-dark);
-  color: rgba(255, 255, 255, 0.68);
+  color: rgba(var(--white-rgb), 0.68);
   font-size: 0.7rem;
   letter-spacing: normal;
   text-transform: uppercase;
@@ -177,13 +177,13 @@
   display: block;
   width: 100%;
   height: clamp(30rem, 72svh, 52rem);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background: #ffffff;
+  border: 1px solid rgba(var(--white-rgb), 0.18);
+  background: var(--white);
 }
 
 .reader-window__note {
   padding: 0.9rem 1rem 1rem;
-  color: rgba(255, 255, 255, 0.52);
+  color: rgba(var(--white-rgb), 0.52);
   font-size: 0.72rem;
   letter-spacing: normal;
 }
