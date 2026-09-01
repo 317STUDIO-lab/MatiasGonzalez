@@ -426,7 +426,6 @@ h3 {
 .expertise-card h3,
 .timeline__item h3 {
   font-family: var(--font-display);
-  font-stretch: condensed;
 }
 
 .section-label span:first-child,
@@ -1042,14 +1041,20 @@ h3 {
 }
 
 .tools__line {
-  display: flex;
-  width: max-content;
-  font-size: clamp(4rem, 9vw, 9rem);
+  display: block;
+  width: 100%;
+  margin: 0;
+  overflow: visible;
+  font-size: clamp(1.5rem, 4vw, 4.5rem);
   font-weight: 700;
   letter-spacing: normal;
   line-height: normal;
-  white-space: nowrap;
-  animation: marquee 28s linear infinite;
+  text-align: center;
+  white-space: normal;
+}
+
+.tools__track {
+  display: inline;
 }
 
 .tools__line i {
@@ -1165,7 +1170,7 @@ h3 {
   color: var(--white);
   font-size: 0.75rem;
   font-weight: 800;
-  letter-spacing: -0.08em;
+  letter-spacing: normal;
   line-height: 1;
   text-transform: none;
 }
@@ -1493,6 +1498,10 @@ h3 {
 
   .contact__email {
     overflow-wrap: anywhere;
+  }
+
+  .tools__line {
+    font-size: clamp(0.9rem, 4.2vw, 1.5rem);
   }
 
   .contact__footer {
