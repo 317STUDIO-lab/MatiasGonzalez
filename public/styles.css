@@ -1,10 +1,50 @@
+@font-face {
+  font-family: "Mango Grotesque";
+  src: url("/assets/fonts/MangoGrotesque-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mango Grotesque";
+  src: url("/assets/fonts/MangoGrotesque-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mango Grotesque";
+  src: url("/assets/fonts/MangoGrotesque-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mango Grotesque";
+  src: url("/assets/fonts/MangoGrotesque-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mango Grotesque";
+  src: url("/assets/fonts/MangoGrotesque-Black.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
 :root {
   --blue: #2e4295;
   --black: #000000;
   --white: #ffffff;
   --line-dark: rgba(255, 255, 255, 0.2);
   --line-light: rgba(0, 0, 0, 0.2);
-  --font-display: "Arial Narrow", "Roboto Condensed", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Mango Grotesque", "Arial Narrow", "Roboto Condensed", "Helvetica Neue", Arial, sans-serif;
   --page-padding: clamp(1.25rem, 4vw, 4.5rem);
   --section-space: clamp(6rem, 12vw, 11rem);
   --radius: 0.8rem;
