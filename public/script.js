@@ -12,6 +12,20 @@ const scrollProgress = document.querySelector("[data-scroll-progress]");
 const projectVisuals = document.querySelectorAll(".project-card__visual");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
+const sectionNavLinks = [...navLinks].filter((link) => link.hash);
+const sectionNavTargets = sectionNavLinks
+  .map((link) => document.querySelector(link.hash))
+  .filter(Boolean);
+
+const setActiveSection = (sectionId) => {
+  sectionNavLinks.forEach((link) => {
+    const isActive = link.hash === `#${sectionId}`;
+    link.classList.toggle("is-active", isActive);
+    if (isActive) link.setAttribute("aria-current", "location");
+    else link.removeAttribute("aria-current");
+  });
+};
+
 year.textContent = new Date().getFullYear();
 
 const closeMenu = () => {
@@ -28,6 +42,19 @@ menuToggle.addEventListener("click", () => {
 });
 
 navLinks.forEach((link) => link.addEventListener("click", closeMenu));
+
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries
+      .filter((entry) => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)
+      .slice(0, 1)
+      .forEach((entry) => setActiveSection(entry.target.id));
+  },
+  { rootMargin: "-38% 0px -48% 0px", threshold: [0, 0.1, 0.35, 0.6] },
+);
+
+sectionNavTargets.forEach((section) => sectionObserver.observe(section));
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closeMenu();

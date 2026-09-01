@@ -167,7 +167,8 @@ h3 {
   backdrop-filter: blur(16px) saturate(1.15);
   color: var(--white);
   mix-blend-mode: normal;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scale(1.15);
+  transform-origin: top center;
 }
 
 .header-brand {
@@ -232,8 +233,8 @@ h3 {
 
 .site-nav {
   display: flex;
-  gap: clamp(1rem, 2vw, 1.75rem);
-  font-size: 1rem;
+  gap: clamp(1.15rem, 2.2vw, 1.9rem);
+  font-size: 1.08rem;
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
@@ -258,6 +259,30 @@ h3 {
 
 .site-nav a:hover::after,
 .site-nav a:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.site-nav a.is-active {
+  color: var(--white);
+}
+
+.site-nav a.is-active::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -0.4rem;
+  left: 0;
+  width: 0.34rem;
+  height: 0.34rem;
+  margin-inline: auto;
+  border-radius: 50%;
+  background: var(--blue);
+  box-shadow: 0 0 0.75rem rgba(46, 66, 149, 0.95);
+}
+
+.site-nav a.is-active::after {
+  background: var(--blue);
   transform: scaleX(1);
   transform-origin: left;
 }
