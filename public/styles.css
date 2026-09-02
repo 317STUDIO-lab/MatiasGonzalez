@@ -442,8 +442,19 @@ h3 {
   font-weight: 500;
 }
 
-.section-label span:first-child,
-.hero__eyebrow,
+.section-light .section-label,
+.section-light .section-label span:first-child {
+  color: var(--blue);
+}
+
+.section-dark .section-label,
+.section-dark .section-label span:first-child,
+.section-blue .section-label,
+.section-blue .section-label span:first-child,
+.hero__eyebrow {
+  color: var(--white);
+}
+
 .project-card__index {
   color: var(--blue);
 }
