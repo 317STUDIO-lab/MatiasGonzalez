@@ -407,13 +407,11 @@ h3 {
   justify-content: space-between;
   padding-bottom: 1rem;
   border-bottom: 1px solid currentColor;
-  font-size: 0.7rem;
+  font-family: var(--font-body);
+  font-size: clamp(0.9rem, 1vw, 1.05rem);
+  font-weight: 500;
   letter-spacing: normal;
   text-transform: uppercase;
-}
-
-.contact > .section-label {
-  font-size: clamp(0.9rem, 1vw, 1.05rem);
 }
 
 .section-heading h2,
