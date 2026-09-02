@@ -412,6 +412,10 @@ h3 {
   text-transform: uppercase;
 }
 
+.contact > .section-label {
+  font-size: clamp(0.9rem, 1vw, 1.05rem);
+}
+
 .section-heading h2,
 .expertise__title,
 .experience__title,
