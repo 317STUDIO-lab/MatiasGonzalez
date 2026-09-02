@@ -412,10 +412,6 @@ h3 {
   text-transform: uppercase;
 }
 
-.header-brand,
-.site-nav,
-.eyebrow,
-.section-label,
 .section-heading h2,
 .expertise__title,
 .experience__title,
@@ -426,6 +422,22 @@ h3 {
 .expertise-card h3,
 .timeline__item h3 {
   font-family: var(--font-display);
+}
+
+.header-brand,
+.site-nav,
+.menu-toggle,
+.section-label,
+.eyebrow,
+.scroll-cue,
+.project-card__index,
+.project-card__status,
+.timeline__date,
+.contact__links,
+.contact__links a,
+.contact__footer div {
+  font-family: var(--font-body);
+  font-weight: 500;
 }
 
 .section-label span:first-child,
@@ -487,7 +499,7 @@ h3 {
   font-size: 0.85rem;
   letter-spacing: normal;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .hero__title {
