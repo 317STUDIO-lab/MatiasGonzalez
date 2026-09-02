@@ -1400,6 +1400,10 @@ h3 {
 }
 
 @media (max-width: 760px) {
+  html {
+    zoom: 1;
+  }
+
   .site-header {
     grid-template-columns: 1fr auto;
     top: 0.75rem;
@@ -1408,7 +1412,7 @@ h3 {
     padding: 0.8rem 1rem;
     transform: none;
     background: rgba(0, 0, 0, 0.82);
-    backdrop-filter: blur(12px);
+    backdrop-filter: none;
     mix-blend-mode: normal;
   }
 
