@@ -517,6 +517,8 @@ h3 {
 
 .hero__eyebrow {
   font-size: clamp(0.95rem, 1.05vw, 1.05rem);
+  letter-spacing: 0.08em;
+  word-spacing: 0.12em;
 }
 
 .hero__title {
